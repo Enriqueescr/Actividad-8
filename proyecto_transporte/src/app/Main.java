@@ -1,35 +1,28 @@
 package proyecto_transporte.src.app;
 import proyecto_transporte.src.transporte.*;
 
+public class Main{
+    public static void main (String[] args)  {
+        Coche cocheKike = new Coche(180);
+        cocheKike.arrancar();
+        cocheKike.encenderMotor();
+        cocheKike.descripcion();
 
-public class Main {
+        Bicicleta BicicletaKike = new Bicicleta(30);
+        BicicletaKike.arrancar();
+        BicicletaKike.fuezaHumana();
+        BicicletaKike.descripcion();
 
-  //Creo esta clase para probar todas las clases de transporte
-  public static void main(String[] args) {
-    
-    Coche cocheDario = new Coche(180);
-    cocheDario.arrancar();
-    cocheDario.encenderMotor();
-    cocheDario.describir();
-    cocheDario.setVelocidadMaxima(5);
-    System.out.println(cocheDario.getVelocidadMaxima());
+        Barco barcoKike = new Barco(50);
+        barcoKike.arrancar();
+        barcoKike.encenderMotor();
+        barcoKike.descripcion();
 
-    Bicicleta bicicletaDario = new Bicicleta(30);
-    bicicletaDario.arrancar();
-    bicicletaDario.usarFuerzaHumana();
-    bicicletaDario.describir();
-
-    Barco barcoDario = new Barco(50);
-    barcoDario.arrancar();
-    barcoDario.encenderMotor();
-    barcoDario.describir();
-
-    Avion avionDario = new Avion(900);
-    avionDario.arrancar();
-    avionDario.encenderMotor();
-    avionDario.describir();
-
-  }
+        Avion avionKike = new Avion(900);
+        avionKike.arrancar();
+        avionKike.encenderMotor();
+        avionKike.descripcion();
 
 
+    }
 }

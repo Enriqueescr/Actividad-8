@@ -2,29 +2,22 @@ package proyecto_transporte.src.transporte;
 
 
 abstract class Vehiculo {
-  //Creo el atrubuto velocidadMaxima 
-  public int velocidadMaxima;
-
-  //Escribo su respectivo constructor
-  public Vehiculo(int velocidadMaxima) {
-    this.velocidadMaxima = velocidadMaxima;
+  public Vehiculo (int velocidadmaxima){
+  
+      this.velocidadmaxima = velocidadmaxima;
+  
+  
   }
-
-  //Creo el metodo arrancar
-  public void arrancar(){
-    System.out.println("El vehiculo esta en marcha");
+  public int velocidadmaxima;
+  
+      public void  arrancar(){
+  
+          System.out.println("el vehiculo está en marcha");
+  
+      } 
+  
+      
+  abstract void descripcion();
+  
+  
   }
-
-  //Creo el metodo abstracto
-  abstract void describir();
-
-  //Creo los getter y setter necesarios
-  public int getVelocidadMaxima(){
-    return velocidadMaxima;
-  }
-  public void setVelocidadMaxima(int velocidadMaxima){
-    this.velocidadMaxima = velocidadMaxima;
-  }
-
-
-}

@@ -1,19 +1,19 @@
 package proyecto_transporte.src.transporte;
 
-public class Bicicleta extends Vehiculo implements SinMotor {
+  public class Bicicleta extends Vehiculo implements SinMotor {
+    public void fuezaHumana(){
 
-  //Escribo la implementacion del metodo abstracto de la clase vehiculo 
-  public void describir(){
-    System.out.println("Soy una bicicleta con una velocidad maxima de "+ velocidadMaxima + " km/h.");
-  }
+        System.out.println("Usando fuerza humana para moverse.");
+    }
+    public Bicicleta(int velocidadmaxima) {
+        super(velocidadmaxima); 
 
-  //Llamo al constructor de la clase vehiculo
-  public Bicicleta(int velocidadMaxima){
-    super(velocidadMaxima = 30);
-  }
 
-  //Implemento el metodo de la interfaz ConMotor
-  public void usarFuerzaHumana(){
-    System.out.println("Usando fuerza humana para mover la bicicleta");
-  }
+        }
+
+    public void descripcion(){
+        System.out.println("Soy una bicicleta que puede alcanzar " +velocidadmaxima+" km/h");
+     }
+
 }
+
