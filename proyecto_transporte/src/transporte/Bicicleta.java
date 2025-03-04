@@ -1,6 +1,6 @@
 package proyecto_transporte.src.transporte;
 
-  public class Bicicleta extends Vehiculo implements SinMotor {
+public class Bicicleta extends Vehiculo implements SinMotor {
     public void fuezaHumana(){
 
         System.out.println("Usando fuerza humana para moverse.");
@@ -16,4 +16,3 @@ package proyecto_transporte.src.transporte;
      }
 
 }
-

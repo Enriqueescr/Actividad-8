@@ -2,12 +2,12 @@ package proyecto_transporte.src.transporte;
 
 public interface SinMotor {
 
-  static void fuezaHumana(){
+    static void fuezaHumana(){
 
-      System.out.println("Usando fuerza humana para moverse.");
-  }
+        System.out.println("Usando fuerza humana para moverse.");
+    }
 
 
 
-  
+    
 }
